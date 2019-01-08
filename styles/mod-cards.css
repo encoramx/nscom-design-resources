@@ -1,0 +1,86 @@
+/*
+CARDS
+Markup examples:
+
+Card:
+------------------------------
+<a href="#" class="card">
+    <h3 class="card-title">Card Title Here</h3>
+    <div class="card-image">
+    <img src="image.jpg" alt="">
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Totam qui praesentium dolorum voluptatum explicabo minima,
+    vero ducimus neque, necessitatibus nemo laudantium nesciunt!
+    Modi, officiis est?</p>
+</a>
+
+modifier classes: card-fancy (image hovering card)
+and card-negative (dark card white text)
+
+Notes: Don't place links inside card, as the card itself is a link.
+*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-light);
+    text-decoration: none;
+    color: var(--color-dark);
+    box-shadow: var(--shadow-medium);
+    border-radius: var(--spc-quarter);
+    transition: ease-in all .1s;
+}
+
+@media all and (min-width: 541px) {
+    .card:hover {
+        transform: translateY(calc(var(--spc-half) * -1));
+        box-shadow: var(--shadow-big);
+    }
+}
+
+.card>*:not(.card-image) {
+    margin: var(--spc);
+    margin-top: 0;
+}
+
+.card> :first-child {
+    margin-top: var(--spc);
+}
+
+.card-image {
+    order: -1;
+    border-radius: var(--spc-quarter) var(--spc-quarter) 0 0;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-fancy {
+    margin-top: var(--spc);
+}
+
+.card-fancy .card-image {
+    margin-right: var(--spc);
+    margin-left: var(--spc);
+    border-radius: var(--spc-quarter);
+    transform: translateY(calc(var(--spc) * -1));
+    box-shadow: var(--shadow-medium);
+    transition: ease-in all .1s;
+}
+
+@media all and (min-width: 541px) {
+    .card-fancy:hover .card-image {
+        transform: translateY(calc(var(--spc-half) * -1));
+        box-shadow: var(--shadow);
+    }
+}
+
+.card-negative {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
