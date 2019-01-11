@@ -1,0 +1,78 @@
+/*
+To set text color:
+class="text-COLORNAME";
+
+To set background color:
+class="bg-COLORNAME";
+
+COLORNAME can be any of these:
+
+orange
+green
+blue
+dark-gray
+light-gray
+dark
+light
+
+Notes:
+First 5 colors are Nearsoft's official.
+Light = white
+Default text color is dark
+*/
+
+.text-orange {
+    color: var(--color-orange);
+}
+
+.text-green {
+    color: var(--color-green);
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-dark-gray {
+    color: var(--color-dark-gray);
+}
+
+.text-light-gray {
+    color: var(--color-light-gray);
+}
+
+.text-dark {
+    color: var(--color-dark);
+}
+
+.text-light {
+    color: var(--color-light);
+}
+
+.bg-orange {
+    background-color: var(--color-orange);
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
+
+.bg-blue {
+    background-color: var(--color-blue);
+}
+
+.bg-dark-gray {
+    background-color: var(--color-dark-gray);
+}
+
+.bg-light-gray {
+    background-color: var(--color-light-gray);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+}
