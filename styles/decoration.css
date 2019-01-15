@@ -1,4 +1,6 @@
 /*
+
+COLOR (TEXT AND BG) --------------------------------------------------
 To set text color:
 class="text-COLORNAME";
 
@@ -19,6 +21,11 @@ Notes:
 First 5 colors are Nearsoft's official.
 Light = white
 Default text color is dark
+
+BOX SHADOWS --------------------------------------------------
+.shadow, .shadow-medium, .shadow-big
+
+
 */
 
 .text-orange {
@@ -75,4 +82,16 @@ Default text color is dark
 
 .bg-light {
     background-color: var(--color-light);
+}
+
+.shadow {
+    box-shadow: var(--shadow);
+}
+
+.shadow-medium {
+    box-shadow: var(--shadow-medium);
+}
+
+.shadow-big {
+    box-shadow: var(--shadow-big);
 }
