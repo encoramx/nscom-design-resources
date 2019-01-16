@@ -5,9 +5,31 @@ html {
     --color-orange: #ff5400;
     --color-green: #4bb900;
     --color-blue: #008ae9;
-    --color-dark-gray: #616a74;
+    /**/
+    --color-dark-gray: rgba(97, 106, 116, 1);
+    --color-dark-gray-90: rgba(97, 106, 116, .9);
+    --color-dark-gray-80: rgba(97, 106, 116, .8);
+    --color-dark-gray-70: rgba(97, 106, 116, .7);
+    --color-dark-gray-60: rgba(97, 106, 116, .6);
+    --color-dark-gray-50: rgba(97, 106, 116, .5);
+    --color-dark-gray-40: rgba(97, 106, 116, .4);
+    --color-dark-gray-30: rgba(97, 106, 116, .3);
+    --color-dark-gray-20: rgba(97, 106, 116, .2);
+    --color-dark-gray-10: rgba(97, 106, 116, .1);
+    /**/
     --color-light-gray: #e0e4e8;
-    --color-dark: #131619;
+    /**/
+    --color-dark: rgba(19, 22, 25, .1);
+    --color-dark-90: rgba(19, 22, 25, .9);
+    --color-dark-80: rgba(19, 22, 25, .8);
+    --color-dark-70: rgba(19, 22, 25, .7);
+    --color-dark-60: rgba(19, 22, 25, .6);
+    --color-dark-50: rgba(19, 22, 25, .5);
+    --color-dark-40: rgba(19, 22, 25, .4);
+    --color-dark-30: rgba(19, 22, 25, .3);
+    --color-dark-20: rgba(19, 22, 25, .2);
+    --color-dark-10: rgba(19, 22, 25, .1);
+    /**/
     --color-light: #fff;
     /* SPACING */
     --max-content-width: 1440px;
