@@ -33,6 +33,7 @@ html {
     --color-light: #fff;
     /* SPACING */
     --max-content-width: 1440px;
+    --max-text-width: 42rem;
     --spc: 1rem;
     --spc-double: calc(var(--spc) * 2);
     --spc-half: calc(var(--spc) / 2);

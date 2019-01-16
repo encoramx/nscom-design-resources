@@ -21,6 +21,16 @@ body {
     padding-left: var(--spc);
 }
 
+.container-text {
+    max-width: var(--max-text-width);
+    margin-top: var(--spc);
+    margin-right: auto;
+    margin-bottom: var(--spc);
+    margin-left: auto;
+    padding-right: var(--spc);
+    padding-left: var(--spc);
+}
+
 /* COLUMNS CONTAINER */
 
 .columns {
