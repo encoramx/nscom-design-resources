@@ -1,0 +1,143 @@
+
+/* Footer  */
+
+footer {
+  background: #4E4E4E;
+}
+
+footer .container .columns>div,
+.subfooter .container .columns>div {
+  background: transparent;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer h3 {
+  color: var(--color-light);
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: var(--color-light);
+  text-decoration: none;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.footer-logo {
+  width: 50%;
+}
+
+.subfooter {
+  background: #656565;
+  color: #FFF;
+}
+
+.subfooter span {
+  color: var(--color-orange);
+}
+
+.subfooter .container .columns>div {
+  display: flex;
+  align-items: center;
+}
+
+.benchmark {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+/* Hero Sections */
+
+.hero-1 {
+  height: 400px;
+  position: relative;
+  background-image: url(https://1.bp.blogspot.com/-vqrxB9q12r8/U-ZQ1zrFEOI/AAAAAAAAMK4/868QDbp_mII/s1600/ponyo1-701578.png);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-1:before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: var(--color-light-gray);
+  opacity: .75;
+  content: '';
+  z-index: 1;
+}
+
+.hero-1 h1,
+.hero-1 .tagline {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.hero-1 h1 {
+  font-size: 2rem;
+}
+
+.hero-1.dark:before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: var(--color-dark-gray);
+  opacity: .75;
+  content: '';
+  z-index: 1;
+}
+
+.hero-1.dark h1,
+.hero-1.dark ,tagline {
+  color: var(--color-light);
+}
+
+.hero {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url(https://ladygeekgirl.files.wordpress.com/2013/09/gake-no-ue-no-ponyo-full-69833.jpg);
+  background-size: cover;
+  background-position: center center;
+  box-sizing: border-box;
+}
+
+.hero-2:before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(transparent, #000);
+  opacity: .75;
+  content: '';
+  z-index: 1;
+  bottom: 0;
+}
+
+.hero-2 h1,
+.hero-2 .tagline {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  color: var(--color-light);
+}
+
+.hero-3 .columns>div:first-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
