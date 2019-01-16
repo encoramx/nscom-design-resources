@@ -19,7 +19,7 @@ html {
     /**/
     --color-light-gray: #e0e4e8;
     /**/
-    --color-dark: rgba(19, 22, 25, .1);
+    --color-dark: rgba(19, 22, 25, 1);
     --color-dark-90: rgba(19, 22, 25, .9);
     --color-dark-80: rgba(19, 22, 25, .8);
     --color-dark-70: rgba(19, 22, 25, .7);

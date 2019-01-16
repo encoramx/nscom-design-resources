@@ -3,6 +3,7 @@
 
 footer {
   background: #4E4E4E;
+  background: var(--color-dark-80);
 }
 
 footer .container .columns>div,
@@ -21,10 +22,10 @@ footer h3 {
 }
 
 footer a {
-  color: var(--color-light);
   text-decoration: none;
   margin-bottom: .5rem;
   display: block;
+  color: var(--color-light-gray);
 }
 
 .footer-logo {
@@ -32,7 +33,7 @@ footer a {
 }
 
 .subfooter {
-  background: #656565;
+  background: var(--color-dark-90);
   color: #FFF;
 }
 
