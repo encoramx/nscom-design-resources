@@ -1,4 +1,3 @@
-
 /* Footer  */
 
 footer {
@@ -6,8 +5,7 @@ footer {
   background: var(--color-dark-80);
 }
 
-footer .container .columns>div,
-.subfooter .container .columns>div {
+footer .container .columns>div, .subfooter .container .columns>div {
   background: transparent;
 }
 
@@ -75,8 +73,7 @@ footer a {
   z-index: 1;
 }
 
-.hero-1 h1,
-.hero-1 .tagline {
+.hero-1 h1, .hero-1 .tagline {
   z-index: 2;
   position: relative;
   text-align: center;
@@ -96,8 +93,7 @@ footer a {
   z-index: 1;
 }
 
-.hero-1.dark h1,
-.hero-1.dark ,tagline {
+.hero-1.dark h1, .hero-1.dark, tagline {
   color: var(--color-light);
 }
 
@@ -129,8 +125,7 @@ footer a {
   bottom: 0;
 }
 
-.hero-2 h1,
-.hero-2 .tagline {
+.hero-2 h1, .hero-2 .tagline {
   z-index: 2;
   position: relative;
   text-align: center;
