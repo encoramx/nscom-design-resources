@@ -95,3 +95,27 @@ BOX SHADOWS --------------------------------------------------
 .shadow-big {
     box-shadow: var(--shadow-big);
 }
+
+.rounded {
+    border-radius: var(--spc-quarter);
+}
+
+.rounded-top {
+    border-top-left-radius: var(--spc-quarter);
+    border-top-right-radius: var(--spc-quarter);
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: var(--spc-quarter);
+    border-bottom-right-radius: var(--spc-quarter);
+}
+
+.rounded-left {
+    border-top-left-radius: var(--spc-quarter);
+    border-bottom-left-radius: var(--spc-quarter);
+}
+
+.rounded-right {
+    border-top-right-radius: var(--spc-quarter);
+    border-bottom-right-radius: var(--spc-quarter);
+}

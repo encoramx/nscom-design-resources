@@ -9,6 +9,7 @@ gulp.task('default', function () {
         'styles/type.css',
         'styles/layout.css',
         'styles/images.css',
+        'styles/basics.css',
         'styles/mod-cards.css',
         'styles/debris.css'
     ])
