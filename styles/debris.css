@@ -1,4 +1,3 @@
-
 /* Footer  */
 
 footer {
@@ -25,7 +24,7 @@ footer a {
   text-decoration: none;
   margin-bottom: .5rem;
   display: block;
-  color: var(--color-light-gray);
+  color: var(--light-gray-50);
 }
 
 .footer-logo {
@@ -142,3 +141,10 @@ footer a {
   justify-content: center;
   flex-direction: column;
 }
+
+/* Pagination */
+
+.pagination {
+  text-align: center;
+}
+
