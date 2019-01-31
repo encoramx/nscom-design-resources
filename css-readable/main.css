@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i');
 html {
-  font-size: 16px;
-  font-family: sans-serif;
   /* COLORS */
+<<<<<<< HEAD
+  --color-orange: #FF5400;
+=======
   --color-orange: #ff5400;
+>>>>>>> c8ddcebfaf52016f797b2222a8128b34539b23c4
   --color-green: #4bb900;
   --color-blue: #008ae9;
   /**/
@@ -141,11 +143,36 @@ BOX SHADOWS --------------------------------------------------
 .shadow-big {
   box-shadow: var(--shadow-big);
 }
+
+.rounded {
+  border-radius: var(--spc-quarter);
+}
+
+.rounded-top {
+  border-top-left-radius: var(--spc-quarter);
+  border-top-right-radius: var(--spc-quarter);
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: var(--spc-quarter);
+  border-bottom-right-radius: var(--spc-quarter);
+}
+
+.rounded-left {
+  border-top-left-radius: var(--spc-quarter);
+  border-bottom-left-radius: var(--spc-quarter);
+}
+
+.rounded-right {
+  border-top-right-radius: var(--spc-quarter);
+  border-bottom-right-radius: var(--spc-quarter);
+}
 html {
   font-size: 18px;
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -249,7 +276,7 @@ body {
 .columns {
   display: grid;
   align-items: start;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .align-top {
@@ -818,6 +845,23 @@ body {
 
 .ratio-4-3 {
   padding-top: 75%;
+}
+body {
+  color: var(--color-dark);
+  background: var(--color-light);
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+  background-image: linear-gradient(180deg, transparent 90%, var(--color-orange) 0), linear-gradient(180deg, transparent 90%, var(--color-light-gray) 0);
+  background-size: 0 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size .2s ease;
+}
+
+a:hover {
+  background-size: 100% 100%, 100% 100%;
 }
 /*
 CARDS
