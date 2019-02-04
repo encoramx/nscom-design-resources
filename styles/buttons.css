@@ -15,35 +15,58 @@
   background: 0 0;
   transition: all 0.25s;
   text-align: center !important;
+
+  position: relative;
+  overflow: hidden;
+  transition: ease-in opacity .3s, ease-in padding .2s, ease-in color .1s;
 }
 
 .button:hover {
   color: #fff;
+  /* background-image: linear-gradient(-156deg, #ff7e15 0, #FF3700 100%); */
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset 0 0 0 2px transparent;
+}
+
+.button:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(-156deg, #ff7e15 0, #FF3700 100%);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset -6px -6px 12px 0 #f02f05;
+  background-size: 101% 101%;
+  opacity: 0;
+  z-index: -1;
+  transition: .2s ease-in opacity;
+}
+
+.button:hover:before{
+  opacity: 1; 
 }
 
 .button--discrete {
   color: #616a74;
   box-shadow: 0 0 0 2px #616a74 inset;
   background: 0 0;
-  transition: .1s ease-in color;
-  transition: .2s ease-in background
+  /* transition: .1s ease-in color; */
+  transition: .2s ease-in background;
 }
 
-.button--discrete:hover {
+.button--discrete:hover:before {
   color: #fff;
   background-image: linear-gradient(156deg, #959da6 0, #616a74 100%);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27)
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27);
+  background-size: 105% 105%;
 }
 
 .button--primary {
   color: #fff;
   background-image: linear-gradient(-156deg, #FF5400 0, #FF3700 100%);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset -6px -6px 16px 0 #f02f05
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset -6px -6px 16px 0 #f02f05;
 }
 
-.button--primary:hover {
+.button--primary:hover:before {
   color: #fff;
   background-image: linear-gradient(-156deg, #ff7e15, #FF3700 100%);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset -6px -6px 12px 0 #ff3700;
@@ -57,4 +80,29 @@ a.button--size_sm {
 a.button--size_lg {
   font-size: 1.3rem;
   padding: 1.1rem 2.5rem .95rem;
+}
+
+a.arrow-button:after {
+  content: '';
+  background: url(https://s3-us-west-1.amazonaws.com/nearsoft-com-media/uploads/2019/02/white-arrow.svg);
+  width: 26px;
+  height: 17px;
+  /* padding-right: 40px; */
+  background-repeat: no-repeat;
+  right: -5px;
+  position: absolute;
+  opacity: 0;
+  transition: ease-in all .2s;
+  top: 14px;
+}
+
+a.arrow-button:hover {
+  padding-right: 50px;
+  transition: ease-in all .2s;
+}
+
+a.arrow-button:hover:after {
+  right: 15px;
+  opacity: 1;
+  transition: ease-in all .2s;
 }
