@@ -61,6 +61,28 @@
   transform: translateY(2px);
 }
 
+/* Arrow button */
+
+.button-arrow:hover {
+  padding: 1em 2.5em 1em 1.5em;
+}
+
+.button-arrow:after {
+  content: "►";
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: .1s ease-in all 0s;
+}
+
+.button-arrow:hover:after {
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: .1s ease-in opacity .2s;
+}
+
 /* Button sizes */
 
 .sm {
