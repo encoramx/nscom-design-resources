@@ -12,7 +12,7 @@
   -webkit-backface-visibility: hidden;
   z-index: 1; }
 
-.button, .button-gray, .button-solid {
+.button, .button-gray, .button-solid, .button-solido {
   display: inline-block;
   font-weight: 700;
   font-family: inherit;
@@ -34,7 +34,7 @@
   height: 100%;
   opacity: 0;
   z-index: -1;
-  transition: .1s ease-in opacity; }
+  transition: .1s ease-in; }
 
 .button:before {
   background-image: linear-gradient(to right, #ff3400 0%, #ff7b00 100%); }
@@ -52,10 +52,10 @@
 
 .button-solid:hover {
   -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
   color: #fff; }
 
-.button-solid:after {
+.button-solid:before {
   position: absolute;
   content: '';
   top: 0;
@@ -65,15 +65,11 @@
   border-radius: 0.3em;
   background-image: linear-gradient(to right, #ff5400 0%, #ff7b00 100%);
   transition: opacity 0.1s ease-out;
-  z-index: 2;
+  z-index: -1;
   opacity: 0; }
 
-.button-solid:hover:after {
+.button-solid:hover:before {
   opacity: 1; }
-
-.button-solid span {
-  position: relative;
-  z-index: 3; }
 
 /* Button sizes */
 .sm {
