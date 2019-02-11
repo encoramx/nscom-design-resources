@@ -21,7 +21,6 @@
 .button-solid {
   color: #fff;
   background-image: linear-gradient(to right, #ff3400 0%, #FF5400 100%);
-  z-index: 1;
 }
 
 .button:before {
