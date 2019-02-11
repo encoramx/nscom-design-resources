@@ -51,7 +51,6 @@ transition: ease-in all .1s;
   box-shadow: inset 0 0 0 2px transparent;
   color: #fff;
   background-image: none;
-  transform: translateY(1px);
   }
 
 .button:hover:before, .button-gray:hover:before {
