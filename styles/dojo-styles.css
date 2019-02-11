@@ -1,0 +1,10 @@
+a {
+  transition: all .25s ease-in-out;
+  background-image: none; }
+
+#teaser {
+  background: #ccc;
+  padding: 8rem 0 6rem;
+  overflow: hidden; }
+  #teaser .card-interviwee {
+    padding: 0 2rem; }
