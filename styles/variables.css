@@ -2,7 +2,7 @@ html {
     /* COLORS */
     --color-orange: #FF5400;
     --color-green: #4bb900;
-    --color-blue: #008ae9;
+    --color-blue: red;
     /**/
     --color-dark-gray: rgba(97, 106, 116, 1);
     --color-dark-gray-90: rgba(97, 106, 116, .9);
