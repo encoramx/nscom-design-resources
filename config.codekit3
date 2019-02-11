@@ -107,6 +107,13 @@
 		"oAP": "/examples/nav.html",
 		"oF": 0
 		},
+	"/examples/pagination.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/examples/pagination.html",
+		"oF": 0
+		},
 	"/examples/type.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -168,7 +175,7 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/styles/buttons2.css": {
+	"/styles/buttons.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,

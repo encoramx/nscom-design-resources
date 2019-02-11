@@ -17,13 +17,16 @@ footer ul {
 footer h3 {
   color: var(--color-light);
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 footer a {
   text-decoration: none;
-  margin-bottom: .5rem;
+  margin-bottom: .2rem;
   display: block;
   color: var(--light-gray-50);
+  background: none;
+  font-weight: 300;
 }
 
 .footer-logo {
