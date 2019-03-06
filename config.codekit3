@@ -58,13 +58,6 @@
 		"oAP": "/examples/buttons.html",
 		"oF": 0
 		},
-	"/examples/dojo-home.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/examples/dojo-home.html",
-		"oF": 0
-		},
 	"/examples/footer.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -98,6 +91,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/examples/hero-4.html",
+		"oF": 0
+		},
+	"/examples/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/examples/index.html",
 		"oF": 0
 		},
 	"/examples/nav.html": {

@@ -3,7 +3,10 @@
   header {
     animation-delay: 2s;
     animation: .5s ease-in-out 0s 1 slideFromTop;
-    
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 100;
   }
  
   nav { 
@@ -15,9 +18,8 @@
       align-items: center;
       color: White;
       padding: 0 2%;
-      width:100%;
-      position:fixed;
-      top:0;
+      
+      
       font-weight: 500;
       -webkit-font-smoothing: subpixel-antialiased;
       -webkit-font-smoothing: antialiased;
