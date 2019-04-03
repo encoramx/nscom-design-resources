@@ -1,4 +1,4 @@
-.page:before {
+.page-template-default:before {
   content: "";
   width: 60%;
   top: 0;
