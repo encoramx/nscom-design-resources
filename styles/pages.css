@@ -1,4 +1,4 @@
-body:before {
+.page:before {
   content: "";
   width: 60%;
   top: 0;
