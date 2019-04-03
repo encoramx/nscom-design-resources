@@ -11,7 +11,7 @@ gulp.task('default', function () {
         'styles/images.css',
         'styles/basics.css',
         'styles/buttons.css',
-        'styles/mod-cards.css'
+        'styles/mod-cards.css',
         'styles/pages.css'
     ])
         .pipe(concatCss('main.css'))

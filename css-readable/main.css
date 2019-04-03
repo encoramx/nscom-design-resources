@@ -1056,3 +1056,25 @@ Notes: Don't place links inside card, as the card itself is a link.
   background: var(--color-dark);
   color: var(--color-light);
 }
+.page:before {
+  content: "";
+  width: 60%;
+  top: 0;
+  right: 0;
+  height: 60vh;
+  display: block;
+  background: linear-gradient(136.55deg, rgba(255, 0, 0, 0.66) 21.6%, rgba(255, 84, 0, 0.454334) 55.73%, rgba(255, 84, 0, 0) 98.24%);
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+
+.content-box {
+  border-top: 4px solid;
+}
+
+.sidebar .card {
+  position: sticky;
+  top: var(--spc-double);
+}
