@@ -3,7 +3,7 @@ html {
   /* COLORS */
   --color-orange: #FF5400;
   --color-green: #4bb900;
-  --color-blue: #008ae9;
+  --color-blue: red;
   /**/
   --color-dark-gray: rgba(97, 106, 116, 1);
   --color-dark-gray-90: rgba(97, 106, 116, .9);
@@ -187,23 +187,27 @@ h1,
 .h1 {
   font-size: 2.22rem;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 h2,
 .h2 {
   font-size: 1.77rem;
   line-height: 1.3;
+  font-weight: 500;
 }
 
 h3,
 .h3 {
   font-size: 1.33rem;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 h4,
 .h4 {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 h5,
@@ -211,12 +215,14 @@ h5,
 small,
 .small {
   font-size: .88rem;
+  font-weight: 500;
 }
 
 h6,
 .h6,
 .tiny {
   font-size: .77rem;
+  font-weight: 500;
 }
 
 .lead {
@@ -868,6 +874,102 @@ a {
 a:hover {
   background-size: 100% 100%, 100% 100%;
 }
+.button {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.1;
+  -webkit-font-smoothing: subpixel-antialiased;
+  padding: 1em 2em;
+  border-radius: 3em;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: ease-in all .1s;
+  box-shadow: inset 0 0 0 2px #ff3400;
+  color: #ff3400;
+  background: transparent;
+}
+
+.button-gray {
+  box-shadow: inset 0 0 0 2px #616a74;
+  color: #616a74;
+}
+
+.button-solid {
+  color: #fff;
+  background-image: linear-gradient(to right, #ff3400 0%, #FF5400 100%);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: .1s ease-in all;
+}
+
+.button:before {
+  background-image: linear-gradient(to right, #ff3400 0%, #ff7b00 100%);
+}
+
+.button-gray:before {
+  background-image: linear-gradient(to right, #616a74 0%, #959da6 100%);
+}
+
+.button-solid:before {
+  background-image: linear-gradient(to right, #ff5400 0%, #ff7b00 100%);
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 2px transparent;
+  color: #fff;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button-solid:hover {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+/* Arrow button */
+
+.button-arrow:hover {
+  padding: 1em 2.5em 1em 1.5em;
+}
+
+.button-arrow:after {
+  content: "►";
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: .1s ease-in all 0s;
+}
+
+.button-arrow:hover:after {
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: .1s ease-in opacity .2s;
+}
+
+/* Button sizes */
+
+.sm {
+  font-size: .75em;
+  line-height: 1.5;
+}
+
+.lg {
+  font-size: 1.3em;
+}
 /*
 CARDS
 Markup examples:
@@ -953,157 +1055,4 @@ Notes: Don't place links inside card, as the card itself is a link.
 .card-negative {
   background: var(--color-dark);
   color: var(--color-light);
-}
-/* Footer  */
-
-footer {
-  background: #4E4E4E;
-  background: var(--color-dark-80);
-}
-
-footer .container .columns>div,
-.subfooter .container .columns>div {
-  background: transparent;
-}
-
-footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-footer h3 {
-  color: var(--color-light);
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-footer a {
-  text-decoration: none;
-  margin-bottom: .2rem;
-  display: block;
-  color: var(--light-gray-50);
-  background: none;
-  font-weight: 300;
-}
-
-.footer-logo {
-  width: 50%;
-}
-
-.subfooter {
-  background: var(--color-dark-90);
-  color: #FFF;
-}
-
-.subfooter span {
-  color: var(--color-orange);
-}
-
-.subfooter .container .columns>div {
-  display: flex;
-  align-items: center;
-}
-
-.benchmark {
-  width: 3rem;
-  margin-right: 1rem;
-}
-
-/* Hero Sections */
-
-.hero-1 {
-  height: 400px;
-  position: relative;
-  background-image: url("https://1.bp.blogspot.com/-vqrxB9q12r8/U-ZQ1zrFEOI/AAAAAAAAMK4/868QDbp_mII/s1600/ponyo1-701578.png");
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-1:before {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background: var(--color-light-gray);
-  opacity: .75;
-  content: '';
-  z-index: 1;
-}
-
-.hero-1 h1,
-.hero-1 .tagline {
-  z-index: 2;
-  position: relative;
-  text-align: center;
-}
-
-.hero-1 h1 {
-  font-size: 2rem;
-}
-
-.hero-1.dark:before {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background: var(--color-dark-gray);
-  opacity: .75;
-  content: '';
-  z-index: 1;
-}
-
-.hero-1.dark h1,
-.hero-1.dark,
-tagline {
-  color: var(--color-light);
-}
-
-.hero {
-  height: 400px;
-  width: 100%;
-  position: relative;
-}
-
-.hero-2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  background-image: url("https://ladygeekgirl.files.wordpress.com/2013/09/gake-no-ue-no-ponyo-full-69833.jpg");
-  background-size: cover;
-  background-position: center center;
-  box-sizing: border-box;
-}
-
-.hero-2:before {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background-image: linear-gradient(transparent, #000);
-  opacity: .75;
-  content: '';
-  z-index: 1;
-  bottom: 0;
-}
-
-.hero-2 h1,
-.hero-2 .tagline {
-  z-index: 2;
-  position: relative;
-  text-align: center;
-  color: var(--color-light);
-}
-
-.hero-3 .columns>div:first-child {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* Pagination */
-
-.pagination {
-  text-align: center;
 }

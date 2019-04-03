@@ -11,6 +11,7 @@
   transition: ease-in all .1s;
   box-shadow: inset 0 0 0 2px #ff3400;
   color: #ff3400;
+  background: transparent;
 }
 
 .button-gray {
