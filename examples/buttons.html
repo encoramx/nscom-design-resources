@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NS Layout Testing</title>
-  <link rel="stylesheet" href="../styles/variables.css">
-  <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/type.css">
-  <link rel="stylesheet" href="../styles/buttons.css">
+  <link rel="stylesheet" href="../dist/main.css">
 
 </head>
 
@@ -24,19 +21,41 @@
       </div>
 
       <div>
-        <p><a class="button-gray sm" href="">Button</a></p>
-        <p><a class="button-gray" href="">Button</a></p>
-        <p><a class="button-gray lg" href="">Button</a></p>
+        <p><a class="button button-gray sm" href="">Button</a></p>
+        <p><a class="button button-gray" href="">Button</a></p>
+        <p><a class="button button-gray lg" href="">Button</a></p>
       </div>
 
       <div>
-        <p><a class="button-solid sm" href="">Button</a></p>
-        <p><a class="button-solid" href="">Button</a></p>
-        <p><a class="button-solid lg" href="">Button</a></p>
+        <p><a class="button button-solid sm" href="">Button</a></p>
+        <p><a class="button button-solid" href="">Button</a></p>
+        <p><a class="button button-solid lg" href="">Button</a></p>
       </div>
 
-      
     </div>
+
+    <hr>
+
+    <div class="columns md-3 lg-3 xl-3">
+      <div>
+        <p><a class="button button-arrow sm" href="">BUTTON</a></p>
+      </div>
+
+      <div>
+        <p><a class="button button-gray button-arrow" href="">Button</a></p>
+      </div>
+
+      <div>
+        <p><a class="button button-solid button-arrow lg" href="">Button</a></p>
+      </div>
+
+      <div class="md-span-3">
+        <p>Nevermind the arrow it's an unicode and we need to replace it with a proper SVG icon, but I think it's very
+          cool that we can add it with just a class (.button-arrow).</p>
+      </div>
+
+    </div>
+
   </div>
 </body>
 
