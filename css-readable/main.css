@@ -51,6 +51,7 @@ html {
   --shadow-medium: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
   --shadow-big: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.1);
 }
+
 /*
 
 COLOR (TEXT AND BG) --------------------------------------------------
@@ -172,6 +173,7 @@ BOX SHADOWS --------------------------------------------------
   border-top-right-radius: var(--spc-quarter);
   border-bottom-right-radius: var(--spc-quarter);
 }
+
 html {
   font-size: 18px;
 }
@@ -183,44 +185,35 @@ body {
   font-weight: 400;
 }
 
-h1,
-.h1 {
+h1, .h1 {
   font-size: 2.22rem;
   line-height: 1.2;
   font-weight: 700;
 }
 
-h2,
-.h2 {
+h2, .h2 {
   font-size: 1.77rem;
   line-height: 1.3;
   font-weight: 500;
 }
 
-h3,
-.h3 {
+h3, .h3 {
   font-size: 1.33rem;
   line-height: 1.4;
   font-weight: 500;
 }
 
-h4,
-.h4 {
+h4, .h4 {
   font-size: 1rem;
   font-weight: 500;
 }
 
-h5,
-.h5,
-small,
-.small {
+h5, .h5, small, .small {
   font-size: .88rem;
   font-weight: 500;
 }
 
-h6,
-.h6,
-.tiny {
+h6, .h6, .tiny {
   font-size: .77rem;
   font-weight: 500;
 }
@@ -265,6 +258,7 @@ h6,
 .text-justify {
   text-align: justify;
 }
+
 body {
   margin: 0;
 }
@@ -384,19 +378,15 @@ body {
   .sm-moveto-2 {
     grid-column: 2;
   }
-
   .sm-moveto-3 {
     grid-column: 3;
   }
-
   .sm-moveto-4 {
     grid-column: 4;
   }
-
   .sm-moveto-5 {
     grid-column: 5;
   }
-
   .sm-moveto-6 {
     grid-column: 6;
   }
@@ -408,55 +398,42 @@ body {
   .md-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .md-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .md-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-
   .md-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-
   .md-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-
   .md-span-1 {
     grid-column: span 1;
   }
-
   .md-span-2 {
     grid-column: span 2;
   }
-
   .md-span-3 {
     grid-column: span 3;
   }
-
   .md-span-4 {
     grid-column: span 4;
   }
-
   .md-span-5 {
     grid-column: span 5;
   }
-
   .md-hide {
     display: none;
   }
-
   .md-show {
     display: block;
   }
-
   .md-show-flex {
     display: flex;
   }
-
   .md-show-grid {
     display: grid;
   }
@@ -466,19 +443,15 @@ body {
   .md-moveto-2 {
     grid-column: 2;
   }
-
   .md-moveto-3 {
     grid-column: 3;
   }
-
   .md-moveto-4 {
     grid-column: 4;
   }
-
   .md-moveto-5 {
     grid-column: 5;
   }
-
   .md-moveto-6 {
     grid-column: 6;
   }
@@ -490,55 +463,42 @@ body {
   .lg-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .lg-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .lg-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-
   .lg-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-
   .lg-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-
   .lg-span-1 {
     grid-column: span 1;
   }
-
   .lg-span-2 {
     grid-column: span 2;
   }
-
   .lg-span-3 {
     grid-column: span 3;
   }
-
   .lg-span-4 {
     grid-column: span 4;
   }
-
   .lg-span-5 {
     grid-column: span 5;
   }
-
   .lg-hide {
     display: none;
   }
-
   .lg-show {
     display: block;
   }
-
   .lg-show-flex {
     display: flex;
   }
-
   .lg-show-grid {
     display: grid;
   }
@@ -548,19 +508,15 @@ body {
   .lg-moveto-2 {
     grid-column: 2;
   }
-
   .lg-moveto-3 {
     grid-column: 3;
   }
-
   .lg-moveto-4 {
     grid-column: 4;
   }
-
   .lg-moveto-5 {
     grid-column: 5;
   }
-
   .lg-moveto-6 {
     grid-column: 6;
   }
@@ -572,75 +528,57 @@ body {
   .xl-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .xl-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .xl-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-
   .xl-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-
   .xl-6 {
     grid-template-columns: repeat(6, 1fr);
   }
-
   .xl-span-1 {
     grid-column: span 1;
   }
-
   .xl-span-2 {
     grid-column: span 2;
   }
-
   .xl-span-3 {
     grid-column: span 3;
   }
-
   .xl-span-4 {
     grid-column: span 4;
   }
-
   .xl-span-5 {
     grid-column: span 5;
   }
-
   .xl-hide {
     display: none;
   }
-
   .xl-show {
     display: block;
   }
-
   .xl-show-flex {
     display: flex;
   }
-
   .xl-show-grid {
     display: grid;
   }
-
   .xl-moveto-2 {
     grid-column: 2;
   }
-
   .xl-moveto-3 {
     grid-column: 3;
   }
-
   .xl-moveto-4 {
     grid-column: 4;
   }
-
   .xl-moveto-5 {
     grid-column: 5;
   }
-
   .xl-moveto-6 {
     grid-column: 6;
   }
@@ -829,6 +767,7 @@ body {
 .pl-2 {
   padding-left: calc(var(--spc) * 2);
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -882,6 +821,7 @@ img {
 .ratio-3-1 {
   padding-top: 33.33%;
 }
+
 body {
   color: var(--color-dark);
   background: var(--color-light);
@@ -899,6 +839,7 @@ a {
 a:hover {
   background-size: 100% 100%, 100% 100%;
 }
+
 .button {
   display: inline-block;
   font-weight: 700;
@@ -995,6 +936,7 @@ a:hover {
 .lg {
   font-size: 1.3em;
 }
+
 /*
 CARDS
 Markup examples:
@@ -1080,58 +1022,6 @@ Notes: Don't place links inside card, as the card itself is a link.
 .card-negative {
   background: var(--color-dark);
   color: var(--color-light);
-}
-.page-template-default:not(.home):before,
-.bg-decor-img {
-  content: "";
-  width: 80%;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  max-height: 800px;
-  display: block;
-  position: fixed;
-  z-index: 0;
-  background: linear-gradient(0deg, white, transparent), linear-gradient(90deg, white, transparent);
-}
-
-.bg-decor-img {
-  background-color: #ff5400;
-  animation: 30s infinite colorChange;
-  z-index: -1;
-  background-size: cover;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
-}
-
-.bg-decor-img:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ff5400;
-  animation: 30s infinite colorChange;
-  opacity: .6;
-}
-
-@keyframes colorChange {
-  0% {
-    background-color: #ff5400;
-  }
-
-  33% {
-    background-color: #c03;
-  }
-
-  66% {
-    background-color: #ffaa00;
-  }
-
-  100% {
-    background-color: #ff5400;
-  }
 }
 
 .content-box {
