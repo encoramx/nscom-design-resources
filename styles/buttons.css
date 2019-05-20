@@ -22,25 +22,7 @@
 .button-solid {
   color: #fff;
   background-image: linear-gradient(to right, #ff3400 0%, #FF5400 100%);
-<<<<<<< HEAD
-  -webkit-backface-visibility: hidden;
-  z-index: 1; }
-
-.button, .button-gray, .button-solid {
-  display: inline-block;
-  font-weight: 700;
-  font-family: inherit;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  padding: 1rem 2rem .955rem;
-  border-radius: 3rem;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: ease-in all .1s; }
-=======
 }
->>>>>>> 7be5ebc9a5b757d849b1089483ad87a253fe944d
 
 .button:before {
   content: "";
