@@ -26,6 +26,15 @@
   background-image: linear-gradient(to right, #ff3400 0%, #FF5400 100%);
 }
 
+.claseloca {
+  display: inline;
+}
+
+.anotherclass {
+  display: block;
+}
+
+
 .button:before {
   content: "";
   position: absolute;
