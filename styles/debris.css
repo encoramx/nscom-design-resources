@@ -16,7 +16,7 @@ footer ul {
 
 footer h3 {
   color: var(--color-light);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -27,6 +27,13 @@ footer a {
   color: var(--light-gray-50);
   background: none;
   font-weight: 300;
+  transition: .3s;
+  font-size: .9rem;
+}
+
+footer a:hover {
+  color: var(--color-light);
+  transition: .3s;
 }
 
 .footer-logo {
@@ -36,6 +43,7 @@ footer a {
 .subfooter {
   background: var(--color-dark-90);
   color: #FFF;
+  font-size: .9rem;
 }
 
 .subfooter span {
