@@ -10,8 +10,9 @@ gulp.task('default', function () {
         'styles/layout.css',
         'styles/images.css',
         'styles/basics.css',
+        'styles/buttons.css',
         'styles/mod-cards.css',
-        'styles/debris.css'
+        'styles/pages.css'
     ])
         .pipe(concatCss('main.css'))
         .pipe(gulp.dest('css-readable'))

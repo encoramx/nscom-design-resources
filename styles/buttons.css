@@ -1,140 +1,98 @@
 /* Buttons Options */
 
 .button {
-  border: none;
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Rubik", "System-UI";
   display: inline-block;
+  font-weight: 700;
+  line-height: 1.1;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
+  padding: 1em 2em;
+  border-radius: 3em;
   text-decoration: none;
-  padding: .96rem 2.2rem .80rem;
-  border-radius: 4rem;
-  cursor: pointer;
-  color: #ff3700;
-  box-shadow: 0 0 0 2px #ff3700 inset;
-  background: 0 0;
-  /* transition: all 0.25s; */
-  text-align: center !important;
   position: relative;
   overflow: hidden;
-  /* transition: ease opacity .2s, ease padding .2s, ease color .1s; */
-  transition: ease all .3s;
+  transition: ease-in all .1s;
+  box-shadow: inset 0 0 0 2px #ff3400;
+  color: #ff3400;
+  background: transparent;
 }
 
-.button:before{
+.button-gray {
+  box-shadow: inset 0 0 0 2px #616a74;
+  color: #616a74;
+}
+
+.button-solid {
+  color: #fff;
+  background-image: linear-gradient(to right, #ff3400 0%, #FF5400 100%);
+}
+
+.button:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(-156deg, #ff7e15 0, #FF3700 100%);
-  background-size: 101% 101%;
   opacity: 0;
   z-index: -1;
-  transition: ease-in opacity .2s, ease-in box-shadow .5s, ease-in color .2s;
+  transition: .1s ease-in all;
 }
 
-.button--discrete {
-  color: #616a74;
-  box-shadow: 0 0 0 2px #616a74 inset;
-  background: 0 0;
-  /* transition: .1s ease-in color; */
-  /* transition: ease-in background .2s; */
-  transition: all .3s;
+.button:before {
+  background-image: linear-gradient(to right, #ff3400 0%, #ff7b00 100%);
 }
 
-.button--discrete:before {
-  color: #fff;
-  background-image: linear-gradient(156deg, #959da6 0, #616a74 100%);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27);
-  background-size: 105% 105%;
-  transition: all .3s;
+.button-gray:before {
+  background-image: linear-gradient(to right, #616a74 0%, #959da6 100%);
 }
 
-.button--primary {
-  color: #fff;
-  background-image: linear-gradient(-156deg, #FF5400 0, #FF3700 100%);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset -6px -6px 16px 0 #f02f05;
+.button-solid:before {
+  background-image: linear-gradient(to right, #ff5400 0%, #ff7b00 100%);
 }
-
-.button--primary:hover:before {
-  color: #fff;
-  background-image: linear-gradient(-156deg, #ff7e15, #FF3700 100%);
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset -6px -6px 12px 0 #ff3700;
-}
-
-
-/* Button Sizes */
-
-a.button--size_sm {
-  font-size: .75rem;
-  padding: .75rem 1.2rem;
-}
-
-a.button--size_lg {
-  font-size: 1.3rem;
-  padding: 1.1rem 2.5rem .95rem;
-}
-
-
-/* Button Animations & Transitions */
 
 .button:hover {
-  color: #fff;  
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .27), inset 0 0 0 2px transparent;
-  transition: ease-in opacity .2s, ease-in box-shadow .5s, ease-in color .4s;
-  /* transition: ease all .3s; */
+  box-shadow: inset 0 0 0 2px transparent;
+  color: #fff;
 }
 
-.button:hover:before{
+.button:hover:before {
   opacity: 1;
-  transition: ease-in opacity .2s;
 }
 
+.button-solid:hover {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
 
-/* Arrow Buttons */
+/* Arrow button */
 
-a.arrow-button:after {
-  content: '';
-  background: url(https://s3-us-west-1.amazonaws.com/nearsoft-com-media/uploads/2019/02/white-arrow.svg);
-  width: 26px;
-  height: 17px;
-  background-repeat: no-repeat;
-  right: -5px;
+.button-arrow:hover {
+  padding: 1em 2.5em 1em 1.5em;
+}
+
+.button-arrow:after {
+  content: "►";
   position: absolute;
+  top: 50%;
+  right: 1em;
   opacity: 0;
-  transition: ease all .3s;
-  top: 18px;
+  transform: translateY(-50%);
+  transition: .1s ease-in all 0s;
 }
 
-a.button--size_lg.arrow-button:after {
-  top: 27px;
-}
-
-a.button--size_sm.arrow-button:after {
-  top: 14px;
-}
-
-a.arrow-button:hover {
-  padding-right: 60px;
-  transition: ease all .3s;
-}
-
-a.arrow-button:hover:after {
-  right: 15px;
+.button-arrow:hover:after {
+  transform: translateY(-50%);
   opacity: 1;
-  transition: ease all .3s;
+  transition: .1s ease-in opacity .2s;
 }
 
-a.button--size_sm.arrow-button:hover {
-  font-size: .75rem;
-  padding-right: 50px;
+/* Button sizes */
+
+.sm {
+  font-size: .75em;
+  line-height: 1.5;
 }
 
-a.button--size_lg.arrow-button:hover {
-  font-size: 1.3rem;
-  padding-right: 60px;
+.lg {
+  font-size: 1.3em;
 }

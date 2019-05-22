@@ -119,3 +119,11 @@ BOX SHADOWS --------------------------------------------------
     border-top-right-radius: var(--spc-quarter);
     border-bottom-right-radius: var(--spc-quarter);
 }
+
+#wpadminbar {
+    opacity: 0 !important;
+}
+
+#wpadminbar:hover {
+    opacity: 1 !important;
+}
