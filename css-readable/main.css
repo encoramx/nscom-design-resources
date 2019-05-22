@@ -426,6 +426,10 @@ body {
   .sm-moveto-6 {
     grid-column-start: 6;
   }
+
+  .sm-hide {
+    display: none;
+  }
 }
 
 /* MEDIUM SCREENS */
@@ -507,6 +511,10 @@ body {
 
   .md-moveto-6 {
     grid-column-start: 6;
+  }
+
+  .md-hide {
+    display: none;
   }
 }
 
@@ -590,6 +598,10 @@ body {
   .lg-moveto-6 {
     grid-column-start: 6;
   }
+
+  .lg-hide {
+    display: none;
+  }
 }
 
 /* XL SCREENS */
@@ -635,14 +647,6 @@ body {
     grid-column-end: span 5;
   }
 
-  .xl-hide {
-    display: none;
-  }
-
-  .xl-show {
-    display: block;
-  }
-
   .xl-show-flex {
     display: flex;
   }
@@ -669,6 +673,10 @@ body {
 
   .xl-moveto-6 {
     grid-column-start: 6;
+  }
+
+  .xl-hide {
+    display: none;
   }
 }
 
@@ -925,6 +933,8 @@ a {
 a:hover {
   background-size: 100% 100%, 100% 100%;
 }
+/* Buttons Options */
+
 .button {
   display: inline-block;
   font-weight: 700;
