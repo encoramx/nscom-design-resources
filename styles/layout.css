@@ -78,23 +78,23 @@ body {
 }
 
 .sm-span-1 {
-    grid-column: span 1;
+    grid-column-end: span 1;
 }
 
 .sm-span-2 {
-    grid-column: span 2;
+    grid-column-end: span 2;
 }
 
 .sm-span-3 {
-    grid-column: span 3;
+    grid-column-end: span 3;
 }
 
 .sm-span-4 {
-    grid-column: span 4;
+    grid-column-end: span 4;
 }
 
 .sm-span-5 {
-    grid-column: span 5;
+    grid-column-end: span 5;
 }
 
 .sm-hide {
@@ -115,19 +115,19 @@ body {
 
 @media all and (max-width: 767px) {
     .sm-moveto-2 {
-        grid-column: 2;
+        grid-column-start: 2;
     }
     .sm-moveto-3 {
-        grid-column: 3;
+        grid-column-start: 3;
     }
     .sm-moveto-4 {
-        grid-column: 4;
+        grid-column-start: 4;
     }
     .sm-moveto-5 {
-        grid-column: 5;
+        grid-column-start: 5;
     }
     .sm-moveto-6 {
-        grid-column: 6;
+        grid-column-start: 6;
     }
 }
 
@@ -150,19 +150,19 @@ body {
         grid-template-columns: repeat(6, 1fr);
     }
     .md-span-1 {
-        grid-column: span 1;
+        grid-column-end: span 1;
     }
     .md-span-2 {
-        grid-column: span 2;
+        grid-column-end: span 2;
     }
     .md-span-3 {
-        grid-column: span 3;
+        grid-column-end: span 3;
     }
     .md-span-4 {
-        grid-column: span 4;
+        grid-column-end: span 4;
     }
     .md-span-5 {
-        grid-column: span 5;
+        grid-column-end: span 5;
     }
     .md-hide {
         display: none;
@@ -180,19 +180,19 @@ body {
 
 @media all and (min-width: 768px) and (max-width: 979px) {
     .md-moveto-2 {
-        grid-column: 2;
+        grid-column-start: 2;
     }
     .md-moveto-3 {
-        grid-column: 3;
+        grid-column-start: 3;
     }
     .md-moveto-4 {
-        grid-column: 4;
+        grid-column-start: 4;
     }
     .md-moveto-5 {
-        grid-column: 5;
+        grid-column-start: 5;
     }
     .md-moveto-6 {
-        grid-column: 6;
+        grid-column-start: 6;
     }
 }
 
@@ -215,19 +215,19 @@ body {
         grid-template-columns: repeat(6, 1fr);
     }
     .lg-span-1 {
-        grid-column: span 1;
+        grid-column-end: span 1;
     }
     .lg-span-2 {
-        grid-column: span 2;
+        grid-column-end: span 2;
     }
     .lg-span-3 {
-        grid-column: span 3;
+        grid-column-end: span 3;
     }
     .lg-span-4 {
-        grid-column: span 4;
+        grid-column-end: span 4;
     }
     .lg-span-5 {
-        grid-column: span 5;
+        grid-column-end: span 5;
     }
     .lg-hide {
         display: none;
@@ -245,19 +245,19 @@ body {
 
 @media all and (min-width: 980px) and (max-width: 1439px) {
     .lg-moveto-2 {
-        grid-column: 2;
+        grid-column-start: 2;
     }
     .lg-moveto-3 {
-        grid-column: 3;
+        grid-column-start: 3;
     }
     .lg-moveto-4 {
-        grid-column: 4;
+        grid-column-start: 4;
     }
     .lg-moveto-5 {
-        grid-column: 5;
+        grid-column-start: 5;
     }
     .lg-moveto-6 {
-        grid-column: 6;
+        grid-column-start: 6;
     }
 }
 
@@ -280,19 +280,19 @@ body {
         grid-template-columns: repeat(6, 1fr);
     }
     .xl-span-1 {
-        grid-column: span 1;
+        grid-column-end: span 1;
     }
     .xl-span-2 {
-        grid-column: span 2;
+        grid-column-end: span 2;
     }
     .xl-span-3 {
-        grid-column: span 3;
+        grid-column-end: span 3;
     }
     .xl-span-4 {
-        grid-column: span 4;
+        grid-column-end: span 4;
     }
     .xl-span-5 {
-        grid-column: span 5;
+        grid-column-end: span 5;
     }
     .xl-hide {
         display: none;
@@ -307,19 +307,19 @@ body {
         display: grid;
     }
     .xl-moveto-2 {
-        grid-column: 2;
+        grid-column-start: 2;
     }
     .xl-moveto-3 {
-        grid-column: 3;
+        grid-column-start: 3;
     }
     .xl-moveto-4 {
-        grid-column: 4;
+        grid-column-start: 4;
     }
     .xl-moveto-5 {
-        grid-column: 5;
+        grid-column-start: 5;
     }
     .xl-moveto-6 {
-        grid-column: 6;
+        grid-column-start: 6;
     }
 }
 
