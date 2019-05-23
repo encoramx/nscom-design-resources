@@ -137,7 +137,7 @@ form input {
   .current-menu-item {
     position: relative;
   }
-  .current-menu-item:before, .current_page_parent:before {
+  .current-menu-item:before {
     content: "";
     width: 6px;
     height: 6px;
@@ -148,12 +148,6 @@ form input {
     left: 50%;
     transform: translateX(-50%);
     display: block;
-  }
-  .current_page_parent:before {
-    background: var(--color-dark-gray);
-  }
-  .current-menu-item:before {
-    background: var(--color-orange);
   }
 }
 

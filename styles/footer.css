@@ -39,6 +39,11 @@ footer a:hover {
   filter: brightness(100);
 }
 
+.subfooter svg {
+  width: 150px;
+  height: auto;
+}
+
 .subfooter {
   background: var(--color-dark-90);
   color: #FFF;
@@ -51,7 +56,15 @@ footer a:hover {
 
 .subfooter .container .columns>div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.subfooter .container .columns>.benchmarks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .benchmark {

@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i');
 html {
   /* COLORS */
-  --color-orange: #FF5400;
+  --color-orange: rgba(255, 84, 0, 1);
+  --color-orange-90: rgba(255, 84, 0, .9);
+  --color-orange-80: rgba(255, 84, 0, .8);
+  --color-orange-70: rgba(255, 84, 0, .7);
+  --color-orange-60: rgba(255, 84, 0, .6);
+  --color-orange-50: rgba(255, 84, 0, .5);
+  --color-orange-40: rgba(255, 84, 0, .4);
+  --color-orange-30: rgba(255, 84, 0, .3);
+  --color-orange-20: rgba(255, 84, 0, .2);
+  --color-orange-10: rgba(255, 84, 0, .1);
+  /**/
   --color-green: #4bb900;
   --color-blue: red;
   /**/
@@ -200,6 +210,34 @@ BOX SHADOWS --------------------------------------------------
 
 .svg-hover-highlight svg:hover .colorchange {
   fill: var(--color-orange);
+}
+
+/* SEPARATORS and HRs */
+
+.separator {
+  border: solid 0;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  margin: calc(var(--spc) * 5) auto;
+  width: 10rem;
+  border-radius: var(--radius);
+}
+
+/* TEMPORARY HIGHLIGHT */
+
+.temp-highlight {
+  animation: temp-highlight 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes temp-highlight {
+  0% {
+    background: var(--color-orange-30);
+  }
+
+  100% {
+    background: transparent;
+  }
 }
 html {
   font-size: 18px;
@@ -974,6 +1012,15 @@ a {
 a:hover {
   background-size: 100% 100%, 100% 100%;
 }
+
+.anchor-offset:before {
+  content: "";
+  position: relative;
+  margin-top: -6rem;
+  height: 6rem;
+  display: block;
+  z-index: -1;
+}
 /* Buttons Options */
 
 .button {
@@ -1319,8 +1366,7 @@ form input {
     position: relative;
   }
 
-  .current-menu-item:before,
-  .current_page_parent:before {
+  .current-menu-item:before {
     content: "";
     width: 6px;
     height: 6px;
@@ -1331,14 +1377,6 @@ form input {
     left: 50%;
     transform: translateX(-50%);
     display: block;
-  }
-
-  .current_page_parent:before {
-    background: var(--color-dark-gray);
-  }
-
-  .current-menu-item:before {
-    background: var(--color-orange);
   }
 }
 
@@ -1470,6 +1508,11 @@ footer a:hover {
   filter: brightness(100);
 }
 
+.subfooter svg {
+  width: 150px;
+  height: auto;
+}
+
 .subfooter {
   background: var(--color-dark-90);
   color: #FFF;
@@ -1482,7 +1525,15 @@ footer a:hover {
 
 .subfooter .container .columns>div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.subfooter .container .columns>.benchmarks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .benchmark {
