@@ -1,6 +1,6 @@
 footer {
-  background: #4E4E4E;
   background: var(--color-dark-80);
+  margin-top: 5rem;
 }
 
 footer .container .columns>div, .subfooter .container .columns>div {
@@ -36,6 +36,7 @@ footer a:hover {
 
 .footer-logo {
   width: 50%;
+  filter: brightness(100);
 }
 
 .subfooter {

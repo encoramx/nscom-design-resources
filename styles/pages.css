@@ -1,6 +1,6 @@
 .sidebar {
   position: sticky;
-  top: var(--spc);
+  top: calc(var(--spc) * 4);
 }
 
 .sidebar .card {
@@ -10,7 +10,7 @@
   margin-right: auto;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 979px) {
   .sidebar {
     box-sizing: border-box;
     background: var(--color-light-gray);
