@@ -1,6 +1,6 @@
 footer {
-  background: #4E4E4E;
   background: var(--color-dark-80);
+  margin-top: 5rem;
 }
 
 footer .container .columns>div, .subfooter .container .columns>div {
@@ -36,6 +36,12 @@ footer a:hover {
 
 .footer-logo {
   width: 50%;
+  filter: brightness(100);
+}
+
+.subfooter svg {
+  width: 150px;
+  height: auto;
 }
 
 .subfooter {
@@ -50,7 +56,15 @@ footer a:hover {
 
 .subfooter .container .columns>div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.subfooter .container .columns>.benchmarks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .benchmark {

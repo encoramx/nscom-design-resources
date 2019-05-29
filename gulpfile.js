@@ -13,6 +13,7 @@ gulp.task('default', function () {
         'styles/buttons.css',
         'styles/mod-cards.css',
         'styles/pages.css',
+        'styles/nav.css',
         'styles/footer.css'
     ])
         .pipe(concatCss('main.css'))
