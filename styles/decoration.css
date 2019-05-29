@@ -127,3 +127,55 @@ BOX SHADOWS --------------------------------------------------
 #wpadminbar:hover {
     opacity: 1 !important;
 }
+
+/* Aditional Styling */
+
+.tag {
+  padding: 4px 8px;
+  background: var(--color-light-gray);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.unstyled-link {
+  background: none;
+  transition: all .3s;
+}
+
+.unstyled-link:hover {
+  transition: all .3s;
+}
+
+blockquote {
+  padding-left: 40px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+blockquote:before {
+  width: 70px;
+  height: 70px;
+  background: url(https://nearsoft.local/wp-content/uploads/2019/05/quote-icon.png);
+  background-size: cover;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 10px;
+}
+
+blockquote p {
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+}
+
+blockquote cite {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 300;
+}
+
+blockquote cite:before {
+  content: '– ';
+}
