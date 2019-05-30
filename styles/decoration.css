@@ -128,6 +128,10 @@ BOX SHADOWS --------------------------------------------------
     border-bottom-right-radius: var(--spc-quarter);
 }
 
+.circle {
+    border-radius: 50%;
+}
+
 #wpadminbar {
     opacity: 0 !important;
 }
@@ -136,10 +140,122 @@ BOX SHADOWS --------------------------------------------------
     opacity: 1 !important;
 }
 
+/* OPACITY */
+
+.opacity-10 {
+    opacity: 1
+}
+
+.opacity-9 {
+    opacity: .9
+}
+
+.opacity-8 {
+    opacity: .8
+}
+
+.opacity-7 {
+    opacity: .7
+}
+
+.opacity-6 {
+    opacity: .6
+}
+
+.opacity-5 {
+    opacity: .5
+}
+
+.opacity-4 {
+    opacity: .4
+}
+
+.opacity-3 {
+    opacity: .3
+}
+
+.opacity-2 {
+    opacity: .2
+}
+
+.opacity-1 {
+    opacity: .1
+}
+
+.opacity-0 {
+    opacity: 0
+}
+
+/* LINK STYLING */
+
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+    background-image: linear-gradient(180deg, transparent 90%, var(--color-orange) 0), linear-gradient(180deg, transparent 90%, var(--color-light-gray) 0);
+    background-size: 0 100%, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease;
+}
+
+a:hover {
+    background-size: 100% 100%, 100% 100%;
+}
+
+/* POST HOVERS */
+
+.post-summary .post-title span, .post-featured .post-title span {
+    color: var(--color-dark);
+    text-decoration: none;
+    background-image: linear-gradient(180deg, transparent 90%, var(--color-orange) 0), linear-gradient(180deg, transparent 90%, var(--color-light-gray) 0);
+    background-size: 0 100%, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease;
+}
+
+.post-summary:hover .post-title span, .post-featured:hover .post-title span {
+    background-size: 100% 100%, 100% 100%;
+}
+
+.post-summary .img-cont-fixed, .post-featured .img-cont-fixed {
+    box-shadow: 0 0 0 ();
+    transition: ease-in all .1s;
+}
+
+.post-summary:hover .img-cont-fixed, .post-featured:hover .img-cont-fixed {
+    transform: translateY(calc(var(--spc-half) * -1));
+    box-shadow: var(--shadow-big);
+}
+
+.text-over-image .post-title span {
+    color: var(--color-light);
+    background-image: linear-gradient(180deg, transparent 90%, var(--color-light) 0), linear-gradient(180deg, transparent 90%, var(--color-light-gray) 0);
+}
+
+/* OFFSET FOR ANCHORS (COMPENSATING FOR THE NAV BAR) */
+
+.anchor-offset:before {
+    content: "";
+    position: relative;
+    margin-top: -6rem;
+    height: 6rem;
+    display: block;
+    z-index: -1;
+}
+
 /* LISTS */
 
 .list-unstyled {
     list-style: none;
+}
+
+.list-categories {
+    list-style-image: url(http://nearsoft.local/wp-content/themes/Velvet/_img/icons/tag.svg);
+    padding-left: var(--spc);
+}
+
+.list-authors {
+    list-style-image: url(http://nearsoft.local/wp-content/themes/Velvet/_img/icons/author.svg);
+    padding-left: var(--spc);
 }
 
 /* SVG */
@@ -154,9 +270,13 @@ BOX SHADOWS --------------------------------------------------
     border: solid 0;
     border-top-width: 2px;
     border-bottom-width: 2px;
-    margin: calc(var(--spc) * 5) auto;
+    margin: calc(var(--spc) * 3) auto;
     width: 10rem;
     border-radius: var(--radius);
+}
+
+.separator-full {
+    width: 100%;
 }
 
 /* TEMPORARY HIGHLIGHT */
@@ -173,4 +293,16 @@ BOX SHADOWS --------------------------------------------------
     100% {
         background: transparent;
     }
+}
+
+/* PILL */
+
+.pill {
+    display: inline-block;
+    padding: 0 var(--spc-half);
+    font-size: .88rem;
+    line-height: calc(var(--spc) * 1.5);
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: var(--spc-quarter);
 }

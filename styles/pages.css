@@ -1,4 +1,4 @@
-.sidebar {
+.sidebar.sticky {
   position: sticky;
   top: calc(var(--spc) * 4);
 }
@@ -18,4 +18,17 @@
     width: 100vw;
     margin-left: calc(-1 * var(--spc));
   }
+}
+
+.pagination {
+  display: grid;
+  grid-gap: var(--spc);
+  grid-template-columns: 1fr 1fr;
+}
+
+.pagination-newer {}
+
+.pagination-older {
+  display: flex;
+  justify-content: flex-end;
 }

@@ -1,5 +1,5 @@
 footer {
-  background: var(--color-dark-80);
+  background: var(--color-dark);
   margin-top: 5rem;
 }
 
@@ -18,15 +18,19 @@ footer h3 {
   font-weight: 500;
 }
 
-footer a {
+footer a, .subfooter a {
   text-decoration: none;
   margin-bottom: .2rem;
   display: block;
-  color: var(--light-gray-50);
+  color: var(--color-light-gray-50);
   background: none;
   font-weight: 300;
   transition: .3s;
   font-size: .9rem;
+}
+
+.footer span, .subfooter span {
+  margin-bottom: .2rem;
 }
 
 footer a:hover {
@@ -48,10 +52,6 @@ footer a:hover {
   background: var(--color-dark-90);
   color: #FFF;
   font-size: .9rem;
-}
-
-.subfooter span {
-  color: var(--color-orange);
 }
 
 .subfooter .container .columns>div {

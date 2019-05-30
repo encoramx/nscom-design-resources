@@ -26,15 +26,15 @@ html {
     --color-dark-gray-10: rgba(97, 106, 116, .1);
     /**/
     --color-light-gray: #e0e4e8;
-    --light-gray-90: rgba(224, 228, 232, .9);
-    --light-gray-80: rgba(224, 228, 232, .8);
-    --light-gray-70: rgba(224, 228, 232, .7);
-    --light-gray-60: rgba(224, 228, 232, .6);
-    --light-gray-50: rgba(224, 228, 232, .5);
-    --light-gray-40: rgba(224, 228, 232, .4);
-    --light-gray-30: rgba(224, 228, 232, .3);
-    --light-gray-20: rgba(224, 228, 232, .2);
-    --light-gray-10: rgba(224, 228, 232, .1);
+    --color-light-gray-90: rgba(224, 228, 232, .9);
+    --color-light-gray-80: rgba(224, 228, 232, .8);
+    --color-light-gray-70: rgba(224, 228, 232, .7);
+    --color-light-gray-60: rgba(224, 228, 232, .6);
+    --color-light-gray-50: rgba(224, 228, 232, .5);
+    --color-light-gray-40: rgba(224, 228, 232, .4);
+    --color-light-gray-30: rgba(224, 228, 232, .3);
+    --color-light-gray-20: rgba(224, 228, 232, .2);
+    --color-light-gray-10: rgba(224, 228, 232, .1);
     /**/
     --color-dark: rgba(19, 22, 25, 1);
     --color-dark-90: rgba(19, 22, 25, .9);

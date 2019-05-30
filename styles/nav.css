@@ -5,6 +5,7 @@
   width: 100vw;
   height: calc(var(--spc) * 3.5);
   z-index: 10;
+  box-sizing: content-box;
 }
 
 .nav-logo {
@@ -38,7 +39,7 @@
   background: transparent;
   vertical-align: baseline;
   color: var(--color-dark-gray);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-items a:hover {
@@ -134,10 +135,10 @@ form input {
 }
 
 @media all and (min-width: 980px) {
-  .current-menu-item {
+  .nav .current-menu-item {
     position: relative;
   }
-  .current-menu-item:before {
+  .nav .current-menu-item:before {
     content: "";
     width: 6px;
     height: 6px;
@@ -162,6 +163,7 @@ form input {
   }
   .nav-logo {
     padding-bottom: 1rem;
+    box-sizing: content-box;
   }
   .nav-items {
     margin-left: 0;
@@ -192,6 +194,7 @@ form input {
   .nav-search .form {
     background: var(--color-light-gray);
     margin-bottom: var(--spc-half);
+    border-radius: var(--radius);
   }
   .nav-search .form a {
     display: none;
