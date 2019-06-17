@@ -43,6 +43,7 @@ img {
     height: 0;
     box-sizing: content-box;
     position: relative;
+    background: var(--color-dark-gray);
 }
 
 .img-cont-fixed img {
@@ -51,6 +52,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .9;
 }
 
 .ratio-1-1 {

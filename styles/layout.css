@@ -39,6 +39,12 @@ body {
     grid-gap: 2rem;
 }
 
+@media screen and (max-width: 767px) {
+    .columns {
+        display: block;
+    }
+}
+
 .align-top {
     align-items: start;
 }
@@ -113,6 +119,14 @@ body {
     display: grid;
 }
 
+.sm-show-iblock {
+    display: inline-block;
+}
+
+.sm-show-inline {
+    display: inline;
+}
+
 @media all and (max-width: 767px) {
     .sm-moveto-2 {
         grid-column-start: 2;
@@ -178,6 +192,12 @@ body {
     }
     .md-show-grid {
         display: grid;
+    }
+    .md-show-iblock {
+        display: inline-block;
+    }
+    .md-show-inline {
+        display: inline;
     }
 }
 
@@ -246,6 +266,12 @@ body {
     }
     .lg-show-grid {
         display: grid;
+    }
+    .lg-show-iblock {
+        display: inline-block;
+    }
+    .lg-show-inline {
+        display: inline;
     }
 }
 

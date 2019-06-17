@@ -24,16 +24,16 @@ Notes: Don't place links inside card, as the card itself is a link.
 .card {
     display: flex;
     flex-direction: column;
-    background: var(--color-light);
+    background: var(--color-light-gray-40);
     text-decoration: none;
     color: var(--color-dark);
-    box-shadow: var(--shadow-medium);
+    /* box-shadow: var(--shadow-medium); */
     border-radius: var(--spc-quarter);
     transition: ease-in all .1s;
 }
 
 @media all and (min-width: 541px) {
-    .card:hover {
+    .card.card-jumpy:hover {
         transform: translateY(calc(var(--spc-half) * -1));
         box-shadow: var(--shadow-big);
     }
@@ -83,4 +83,23 @@ Notes: Don't place links inside card, as the card itself is a link.
 .card-negative {
     background: var(--color-dark);
     color: var(--color-light);
+}
+
+.text-over-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--color-light);
+    padding: var(--spc-double);
+    background-image: linear-gradient(transparent, var(--color-dark-50));
+}
+
+.text-over-image>* {
+    margin: 0;
+    margin-top: var(--spc);
 }
