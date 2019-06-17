@@ -92,6 +92,10 @@ BOX SHADOWS --------------------------------------------------
     background: transparent !important;
 }
 
+.bg-extra-light {
+    background-color: var(--color-light-gray-40);
+}
+
 .shadow {
     box-shadow: var(--shadow);
 }
