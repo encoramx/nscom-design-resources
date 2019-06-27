@@ -160,6 +160,10 @@ html {
   background: transparent !important;
 }
 
+.bg-extra-light {
+  background-color: var(--color-light-gray-40);
+}
+
 .shadow {
   box-shadow: var(--shadow);
 }
@@ -980,6 +984,11 @@ body {
   margin-left: calc(var(--spc) * 2);
 }
 
+.mx-3 {
+  margin-right: calc(var(--spc) * 3);
+  margin-left: calc(var(--spc) * 3);
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -995,6 +1004,11 @@ body {
   margin-bottom: calc(var(--spc) * 2);
 }
 
+.my-3 {
+  margin-top: calc(var(--spc) * 3);
+  margin-bottom: calc(var(--spc) * 3);
+}
+
 .mt-0 {
   margin-top: 0;
 }
@@ -1005,6 +1019,10 @@ body {
 
 .mt-2 {
   margin-top: calc(var(--spc) * 2);
+}
+
+.mt-3 {
+  margin-top: calc(var(--spc) * 3);
 }
 
 .mr-0 {
@@ -1019,6 +1037,10 @@ body {
   margin-right: calc(var(--spc) * 2);
 }
 
+.mr-3 {
+  margin-right: calc(var(--spc) * 3);
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -1031,6 +1053,10 @@ body {
   margin-bottom: calc(var(--spc) * 2);
 }
 
+.mb-3 {
+  margin-bottom: calc(var(--spc) * 3);
+}
+
 .ml-0 {
   margin-left: 0;
 }
@@ -1041,6 +1067,10 @@ body {
 
 .ml-2 {
   margin-left: calc(var(--spc) * 2);
+}
+
+.ml-3 {
+  margin-left: calc(var(--spc) * 3);
 }
 
 /* SPACING (PADDINGS) */
@@ -1774,4 +1804,195 @@ footer a:hover {
 .benchmark {
   width: 3rem;
   margin-right: 1rem;
+}
+/* Hero Sections */
+
+.hero-1 {
+  height: 400px;
+  position: relative;
+  background-image: url("https://1.bp.blogspot.com/-vqrxB9q12r8/U-ZQ1zrFEOI/AAAAAAAAMK4/868QDbp_mII/s1600/ponyo1-701578.png");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-1:before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: var(--color-light-gray);
+  opacity: .75;
+  content: '';
+  z-index: 1;
+}
+
+.hero-1 h1,
+.hero-1 .tagline {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.hero-1 h1 {
+  font-size: 2rem;
+}
+
+.hero-1.dark:before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: var(--color-dark-gray);
+  opacity: .75;
+  content: '';
+  z-index: 1;
+}
+
+.hero-1.dark h1,
+.hero-1.dark,
+tagline {
+  color: var(--color-light);
+}
+
+.hero {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url("https://ladygeekgirl.files.wordpress.com/2013/09/gake-no-ue-no-ponyo-full-69833.jpg");
+  background-size: cover;
+  background-position: center center;
+  box-sizing: border-box;
+}
+
+.hero-2:before {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(transparent, #000);
+  opacity: .75;
+  content: '';
+  z-index: 1;
+  bottom: 0;
+}
+
+.hero-2 h1,
+.hero-2 .tagline {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  color: var(--color-light);
+}
+
+.hero-3 .columns>div:first-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post-content ul li,
+.post-content ol li {
+  margin-bottom: 1rem;
+}
+
+.bg-extra-light {
+  background-color: var(--color-light-gray-40);
+}
+
+.sidebar .card {
+  padding: var(--spc);
+}
+
+.sidebar .card h3 {
+  font-weight: 500;
+}
+
+.sidebar .card a {
+  color: var(--color-dark-gray);
+}
+
+.social-btn {
+  color: #FFF;
+  border-radius: 100px;
+  padding: 7px 15px;
+  padding-left: 40px;
+  position: relative;
+  display: inline-block;
+  min-width: 220px;
+  font-weight: 400;
+}
+
+.social-btn:before {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: #FFF;
+  border-radius: 30px;
+  left: 7px;
+  content: '';
+}
+
+.twitter-btn {
+  background: #00acee;
+  border: 2px solid #00acee;
+}
+
+.twitter-btn:before {
+  background-image: url("https://nearsoft.com/wp-content/uploads/2019/06/twitterlogo.png");
+  background-size: contain;
+}
+
+.facebook-btn {
+  /* background: #227aee; */
+  background: #FFF;
+  border: 2px solid #227aee;
+  color: #227aee;
+  box-sizing: border-box;
+}
+
+.facebook-btn:before {
+  background-image: url("https://nearsoft.com/wp-content/uploads/2019/06/facebooklogo.png");
+  background-size: cover;
+}
+
+.linkedin-btn {
+  background: #2867b2;
+  border: 2px solid #2867b2;
+}
+
+.linkedin-btn:before {
+  background-image: url("https://nearsoft.com/wp-content/uploads/2019/06/linkedinlogo.png");
+  background-size: contain;
+}
+
+@media all and (max-width: 980px) {
+  .social-btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-btn {
+    margin: 0 0 1rem 0;
+  }
+}
+.hover .img-cont-fixed {
+  box-shadow: 0 0 0 ();
+  transition: ease-in all .1s;
+}
+
+.hover:hover .img-cont-fixed {
+  transform: translateY(calc(var(--spc-half) * -1));
+  box-shadow: var(--shadow-big);
+}
+
+.hover:hover a {
+  background-size: 100% 100%,100% 100%;
 }

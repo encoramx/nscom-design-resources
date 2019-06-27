@@ -387,6 +387,11 @@ body {
     margin-left: calc(var(--spc) * 2);
 }
 
+.mx-3 {
+    margin-right: calc(var(--spc) * 3);
+    margin-left: calc(var(--spc) * 3);
+}
+
 .my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -402,6 +407,11 @@ body {
     margin-bottom: calc(var(--spc) * 2);
 }
 
+.my-3 {
+    margin-top: calc(var(--spc) * 3);
+    margin-bottom: calc(var(--spc) * 3);
+}
+
 .mt-0 {
     margin-top: 0;
 }
@@ -412,6 +422,10 @@ body {
 
 .mt-2 {
     margin-top: calc(var(--spc) * 2);
+}
+
+.mt-3 {
+    margin-top: calc(var(--spc) * 3);
 }
 
 .mr-0 {
@@ -426,6 +440,10 @@ body {
     margin-right: calc(var(--spc) * 2);
 }
 
+.mr-3 {
+    margin-right: calc(var(--spc) * 3);
+}
+
 .mb-0 {
     margin-bottom: 0;
 }
@@ -438,6 +456,10 @@ body {
     margin-bottom: calc(var(--spc) * 2);
 }
 
+.mb-3 {
+    margin-bottom: calc(var(--spc) * 3);
+}
+
 .ml-0 {
     margin-left: 0;
 }
@@ -448,6 +470,10 @@ body {
 
 .ml-2 {
     margin-left: calc(var(--spc) * 2);
+}
+
+.ml-3 {
+    margin-left: calc(var(--spc) * 3);
 }
 
 /* SPACING (PADDINGS) */

@@ -87,9 +87,87 @@
   flex-direction: column;
 }
 
-/* Pagination */
-
-.pagination {
-  text-align: center;
+.post-content ul li, .post-content ol li {
+  margin-bottom: 1rem;
 }
 
+.bg-extra-light {
+  background-color: var(--color-light-gray-40);
+}
+
+.sidebar .card {
+  padding: var(--spc);
+}
+
+.sidebar .card h3 {
+  font-weight: 500;
+}
+
+.sidebar .card a {
+  color: var(--color-dark-gray)
+}
+
+.social-btn {
+  color: #FFF;
+  border-radius: 100px;
+  padding: 7px 15px;
+  padding-left: 40px;
+  position: relative;
+  display: inline-block;
+  min-width: 220px;
+  font-weight: 400;
+}
+
+.social-btn:before {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: #FFF;
+  border-radius: 30px;
+  left: 7px;
+  content: '';
+}
+
+.twitter-btn {
+  background: #00acee;
+  border: 2px solid #00acee;
+}
+
+.twitter-btn:before {
+  background-image: url(https://nearsoft.com/wp-content/uploads/2019/06/twitterlogo.png);
+  background-size: contain;
+}
+
+.facebook-btn {
+  /* background: #227aee; */
+  background: #FFF;
+  border: 2px solid #227aee;
+  color: #227aee;
+  box-sizing: border-box;
+}
+
+.facebook-btn:before {
+  background-image: url(https://nearsoft.com/wp-content/uploads/2019/06/facebooklogo.png);
+  background-size: cover;
+}
+
+.linkedin-btn {
+  background: #2867b2;
+  border: 2px solid #2867b2;
+}
+
+.linkedin-btn:before {
+  background-image: url(https://nearsoft.com/wp-content/uploads/2019/06/linkedinlogo.png);
+  background-size: contain;
+}
+
+@media all and (max-width: 980px) {
+  .social-btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-btn {
+    margin: 0 0 1rem 0;
+  }
+}

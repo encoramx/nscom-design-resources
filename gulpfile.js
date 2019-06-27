@@ -14,7 +14,9 @@ gulp.task('default', function () {
         'styles/mod-cards.css',
         'styles/pages.css',
         'styles/nav.css',
-        'styles/footer.css'
+        'styles/footer.css',
+        'styles/debris.css',
+        'styles/animation.css'
     ])
         .pipe(concatCss('main.css'))
         .pipe(gulp.dest('css-readable'))

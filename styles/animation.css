@@ -1,0 +1,13 @@
+.hover .img-cont-fixed {
+  box-shadow: 0 0 0 ();
+  transition: ease-in all .1s;
+}
+
+.hover:hover .img-cont-fixed {
+  transform: translateY(calc(var(--spc-half) * -1));
+  box-shadow: var(--shadow-big);
+}
+
+.hover:hover a {
+  background-size: 100% 100%,100% 100%;
+}
