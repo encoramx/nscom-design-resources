@@ -92,6 +92,10 @@ BOX SHADOWS --------------------------------------------------
 
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text-orange {
   color: var(--color-orange);
 }
@@ -310,6 +314,11 @@ a:hover {
   z-index: -1;
 }
 
+.anchor-offset:target span {
+  animation: temp-highlight 10s;
+  animation-iteration-count: 1;
+}
+
 /* LISTS */
 
 .list-unstyled {
@@ -323,6 +332,13 @@ a:hover {
 
 .list-authors {
   list-style-image: url("http://nearsoft.local/wp-content/themes/Velvet/_img/icons/author.svg");
+  padding-left: var(--spc);
+}
+
+.faq-question {
+  background-repeat: no-repeat;
+  background-position: 0 6.5rem;
+  background-image: url("http://nearsoft.local/wp-content/themes/Velvet/_img/icons/question.svg");
   padding-left: var(--spc);
 }
 
@@ -347,11 +363,38 @@ a:hover {
   width: 100%;
 }
 
-/* TEMPORARY HIGHLIGHT */
+blockquote {
+  padding-left: 40px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
 
-.temp-highlight {
-  animation: temp-highlight 3s;
-  animation-iteration-count: 1;
+blockquote:before {
+  width: 70px;
+  height: 70px;
+  background: url("https://nearsoft.local/wp-content/uploads/2019/05/quote-icon.png");
+  background-size: cover;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 10px;
+}
+
+blockquote p {
+  font-size: 24px;
+  color: #000;
+  font-weight: 400;
+}
+
+blockquote cite {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 300;
+}
+
+blockquote cite:before {
+  content: '– ';
 }
 
 @keyframes temp-highlight {
@@ -871,6 +914,10 @@ body {
     grid-column-end: span 5;
   }
 
+  .xl-show {
+    display: block;
+  }
+
   .xl-show-flex {
     display: flex;
   }
@@ -1187,6 +1234,7 @@ body {
   box-shadow: inset 0 0 0 2px #ff3400;
   color: #ff3400;
   background: transparent;
+  z-index: 4;
 }
 
 .button-gray {
@@ -1696,7 +1744,7 @@ footer a:hover {
 
 .footer-logo {
   width: 50%;
-  filter: brightness(100);
+  filter: brightness(0) invert(1);
 }
 
 .subfooter svg {

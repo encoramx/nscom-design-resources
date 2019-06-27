@@ -28,6 +28,10 @@ BOX SHADOWS --------------------------------------------------
 
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text-orange {
     color: var(--color-orange);
 }
@@ -242,6 +246,11 @@ a:hover {
     z-index: -1;
 }
 
+.anchor-offset:target span {
+    animation: temp-highlight 10s;
+    animation-iteration-count: 1;
+}
+
 /* LISTS */
 
 .list-unstyled {
@@ -255,6 +264,13 @@ a:hover {
 
 .list-authors {
     list-style-image: url(http://nearsoft.local/wp-content/themes/Velvet/_img/icons/author.svg);
+    padding-left: var(--spc);
+}
+
+.faq-question {
+    background-repeat: no-repeat;
+    background-position: 0 6.5rem;
+    background-image: url(http://nearsoft.local/wp-content/themes/Velvet/_img/icons/question.svg);
     padding-left: var(--spc);
 }
 
@@ -279,61 +295,38 @@ a:hover {
     width: 100%;
 }
 
-/* TEMPORARY HIGHLIGHT */
-
-.temp-highlight {
-    animation: temp-highlight 3s;
-    animation-iteration-count: 1;
-}
-
-.tag {
-  padding: 4px 8px;
-  background: var(--color-light-gray);
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.unstyled-link {
-  background: none;
-  transition: all .3s;
-}
-
-.unstyled-link:hover {
-  transition: all .3s;
-}
-
 blockquote {
-  padding-left: 40px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  position: relative;
+    padding-left: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
 }
 
 blockquote:before {
-  width: 70px;
-  height: 70px;
-  background: url(https://nearsoft.local/wp-content/uploads/2019/05/quote-icon.png);
-  background-size: cover;
-  content: '';
-  position: absolute;
-  left: -50px;
-  top: 10px;
+    width: 70px;
+    height: 70px;
+    background: url(https://nearsoft.local/wp-content/uploads/2019/05/quote-icon.png);
+    background-size: cover;
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 10px;
 }
 
 blockquote p {
-  font-size: 24px;
-  color: #000;
-  font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
 }
 
 blockquote cite {
-  font-size: 18px;
-  color: #999999;
-  font-weight: 300;
+    font-size: 18px;
+    color: #999999;
+    font-weight: 300;
 }
 
 blockquote cite:before {
-  content: '– ';
+    content: '– ';
 }
 
 @keyframes temp-highlight {

@@ -329,6 +329,9 @@ body {
     .xl-span-5 {
         grid-column-end: span 5;
     }
+    .xl-show {
+        display: block;
+    }
     .xl-show-flex {
         display: flex;
     }
