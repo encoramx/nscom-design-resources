@@ -309,7 +309,7 @@ blockquote {
 blockquote:before {
     width: 70px;
     height: 70px;
-    background: url(https://nearsoft.local/wp-content/uploads/2019/05/quote-icon.png);
+    background: url(https://cdn.nearsoft.com/uploads/2019/07/quote-icon.png);
     background-size: cover;
     content: '';
     position: absolute;
